@@ -45,7 +45,7 @@ button{font-family:inherit}
 .nav-toggle{display:none;background:none;border:0;font-size:24px;cursor:pointer;color:var(--ink)}
 .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:120px 32px 120px}
 .hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(100deg, rgba(247,242,230,.85) 0%, rgba(247,242,230,.6) 35%, rgba(247,242,230,.25) 65%, rgba(247,242,230,.4) 100%);pointer-events:none}
-.hero-bg-img{position:absolute;inset:0;z-index:0;background-image:url(hero-bg2.jpg);background-size:100% auto;background-position:center center;background-repeat:no-repeat;opacity:.55;filter:saturate(.85) contrast(.92)}
+.hero-bg-img{position:absolute;inset:0;z-index:0;background-image:url(hero-bg.jpg);background-size:100% auto;background-position:center center;background-repeat:no-repeat;opacity:.55;filter:saturate(.85) contrast(.92)}
 .hero-in{max-width:1200px;margin:0 auto;width:100%;position:relative;z-index:1}
 .hero-eyebrow{font-family:var(--serif);font-size:14px;letter-spacing:8px;color:var(--gold-dark);margin-bottom:28px;display:inline-flex;align-items:center;gap:16px}
 .hero-eyebrow::before,.hero-eyebrow::after{content:"";display:inline-block;width:32px;height:1px;background:var(--gold)}
@@ -297,7 +297,7 @@ footer{background:var(--ink);color:rgba(247,242,230,.7);padding:60px 32px 24px}
 </article>
 
 <article class="product-card" data-cat="eq">
-<div class="product-img"><span class="product-badge">設備</span><img src="product-barcode.jpeg" alt="條碼機" class="product-photo wide"></div>
+<div class="product-img"><span class="product-badge">設備</span><img src="product-barcode.jpg" alt="條碼機" class="product-photo wide"></div>
 <div class="product-body">
 <div class="product-num">EQUIPMENT / 04</div>
 <h3 class="product-name">條碼機</h3>
@@ -317,7 +317,7 @@ footer{background:var(--ink);color:rgba(247,242,230,.7);padding:60px 32px 24px}
 </article>
 
 <article class="product-card" data-cat="cs">
-<div class="product-img"><span class="product-badge">耗材</span><img src="product-film.jpeg" alt="食品級保鮮膜" class="product-photo"></div>
+<div class="product-img"><span class="product-badge">耗材</span><img src="product-film.jpg" alt="食品級保鮮膜" class="product-photo"></div>
 <div class="product-body">
 <div class="product-num">CONSUMABLE / 01</div>
 <h3 class="product-name">食品級保鮮膜</h3>
@@ -514,7 +514,9 @@ footer{background:var(--ink);color:rgba(247,242,230,.7);padding:60px 32px 24px}
 <div class="info-item"><div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div><div class="info-content"><div class="label">HOURS</div><div class="value">週一至週五　08:30 — 17:30</div></div></div>
 </div>
 
-<form class="contact-form" action="mailto:brady880228@gmail.com" method="post" enctype="text/plain">
+<form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks.html">
+<input type="hidden" name="form-name" value="contact">
+<p style="display:none"><label>請勿填寫：<input name="bot-field"></label></p>
 <h3 class="form-title">寄送訊息</h3>
 <p class="form-subtitle">我們將於 1-2 個工作天內回覆您</p>
 <div class="form-row">
@@ -538,6 +540,7 @@ footer{background:var(--ink);color:rgba(247,242,230,.7);padding:60px 32px 24px}
 <div class="footer-col"><h5>快速連結</h5><ul><li><a href="#about">關於本合</a></li><li><a href="#products">產品服務</a></li><li><a href="#cases">導入實例</a></li><li><a href="#why">選擇我們</a></li><li><a href="#contact">聯絡我們</a></li></ul></div>
 <div class="footer-col"><h5>聯絡方式</h5><ul><li>電話：(04) 2463-2888</li><li>Email：brady880228@gmail.com</li><li>台中市西屯區福雅路 650 號</li></ul></div>
 </div>
+<div style="max-width:1200px;margin:0 auto;padding:16px 0;text-align:center;font-size:13px;color:rgba(245,241,232,.55)"><a href="/privacy.html" style="color:var(--gold);margin:0 12px">隱私權政策</a>　｜　<a href="#contact" style="color:var(--gold);margin:0 12px">聯絡我們</a></div>
 <div class="footer-bottom">
 <div>© 1995 — <span id="yr"></span>　本合實業有限公司　All Rights Reserved.</div>
 <div>食品包裝設備專業代理</div>
