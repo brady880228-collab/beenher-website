@@ -139,7 +139,7 @@ section{padding:100px 32px;position:relative}
 .cases .section-title{color:var(--paper)}
 .cases .section-eyebrow{color:var(--gold)}
 .cases .section-desc{color:rgba(247,242,230,.75)}
-.case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:28px;position:relative;z-index:1;max-width:900px;margin:0 auto}
+.case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:28px;position:relative;z-index:1;max-width:1200px;margin:0 auto}
 .case-card{background:var(--ink-2);border:1px solid rgba(201,166,86,.25);overflow:hidden;transition:all .3s}
 .case-card:hover{transform:translateY(-4px);border-color:var(--gold)}
 .case-media{aspect-ratio:16/10;background:#0f1822;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
@@ -457,25 +457,50 @@ footer{background:var(--ink);color:rgba(247,242,230,.7);padding:60px 32px 24px}
 
 <article class="case-card">
 <div class="case-media">
-<div class="case-media-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg><span>VIDEO . 01</span></div>
+<video src="GIRO網袋包裝機_480p.mp4" controls muted playsinline loop style="width:100%;height:100%;object-fit:cover;display:block"></video>
 </div>
 <div class="case-body">
 <div class="case-industry">蔬果批發業</div>
-<h3 class="case-title">柑橘類網袋打包線</h3>
-<div class="case-tags"><span class="case-tag">網袋機</span><span class="case-tag">水果吊牌</span></div>
-<p class="case-desc">為柑橘批發場建置全自動網袋包裝線，搭配品牌吊牌印刷，大幅提升產品辨識度與出貨效率。</p>
+<h3 class="case-title">半自動柑橘類包裝線</h3>
+<div class="case-tags"><span class="case-tag">半自動網袋機</span><span class="case-tag">水果吊牌</span></div>
+<p class="case-desc">為柑橘批發場建置半自動網袋包裝線，搭配品牌吊牌印刷，操作簡便、靈活調整，適合中小型產量需求。</p>
 </div>
 </article>
 
 <article class="case-card">
 <div class="case-media">
-<div class="case-media-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg><span>VIDEO . 02</span></div>
+<video src="GIRO CA 9S洋蔥包裝_480p.mp4" controls muted playsinline loop style="width:100%;height:100%;object-fit:cover;display:block"></video>
+</div>
+<div class="case-body">
+<div class="case-industry">蔬果批發業</div>
+<h3 class="case-title">全自動柑橘類包裝線</h3>
+<div class="case-tags"><span class="case-tag">全自動連續型網袋機</span><span class="case-tag">水果吊牌</span></div>
+<p class="case-desc">為大型柑橘批發場建置全自動連續式網袋包裝線，高速穩定出袋、自動封口，大幅提升產量與出貨效率。</p>
+</div>
+</article>
+
+
+<article class="case-card">
+<div class="case-media">
+<video src="A40肉品包裝.MOV" controls muted playsinline loop style="width:100%;height:100%;object-fit:cover;display:block"></video>
 </div>
 <div class="case-body">
 <div class="case-industry">生鮮通路</div>
-<h3 class="case-title">肉品蔬菜即時保鮮包裝</h3>
+<h3 class="case-title">肉品即時保鮮包裝</h3>
 <div class="case-tags"><span class="case-tag">保鮮膜包裝機</span><span class="case-tag">食品級保鮮膜</span><span class="case-tag">條碼機</span></div>
 <p class="case-desc">超市後場導入保鮮膜包裝機與條碼列印整合系統，從秤重、封膜到貼標一次完成，符合食品追溯規範。</p>
+</div>
+</article>
+
+<article class="case-card">
+<div class="case-media">
+<video src="NPH蔬菜包裝_480p.mp4" controls muted playsinline loop style="width:100%;height:100%;object-fit:cover;display:block"></video>
+</div>
+<div class="case-body">
+<div class="case-industry">蔬果供應鏈</div>
+<h3 class="case-title">蔬菜產線包裝</h3>
+<div class="case-tags"><span class="case-tag">臥式包裝機</span><span class="case-tag">保鮮膜包裝機</span><span class="case-tag">水果吊牌</span></div>
+<p class="case-desc">為蔬菜供應商建置連續式枕型包裝產線，搭配吊牌印刷，提升出貨速度與商品視覺品質。</p>
 </div>
 </article>
 
@@ -512,7 +537,7 @@ footer{background:var(--ink);color:rgba(247,242,230,.7);padding:60px 32px 24px}
 <div class="info-item"><div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="info-content"><div class="label">TELEPHONE</div><div class="value"><a href="tel:+886424632888">(04) 2463-2888</a></div></div></div>
 <div class="info-item"><div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="info-content"><div class="label">EMAIL</div><div class="value"><a href="mailto:brady880228@gmail.com">brady880228@gmail.com</a></div></div></div>
 <div class="info-item"><div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="info-content"><div class="label">ADDRESS</div><div class="value">台中市西屯區福雅路 650 號</div></div></div>
-<div class="info-item"><div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div><div class="info-content"><div class="label">HOURS</div><div class="value">週一至週五　08:30 — 17:30</div></div></div>
+<div class="info-item"><div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div><div class="info-content"><div class="label">HOURS</div><div class="value">週一至週五　09:00 — 17:30</div></div></div>
 </div>
 
 <form class="contact-form" method="POST" action="https://formspree.io/f/myklvagb">
